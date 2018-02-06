@@ -1,24 +1,30 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Quiz App</string>
+    <!-- header -->
     <string name="title">Cambridge First Certificate</string>
     <string name="sub_title">Exam preparation</string>
+    <!-- main page -->
     <string name="use_of_english">Paper 1: Reading and Use of English</string>
+    <!-- question 1 -->
     <string name="instructions1">Choose the correct answer(only one answer possible) to fill in the blank.</string>
     <string name="question1">1. Please will you pass me ________ grapes?</string>
     <string name="few">few</string>
     <string name="little">little</string>
     <string name="some">some</string>
+    <!-- question 2-->
     <string name="question2">2. I bought a new iPod so I can listen to ___ music I like when I am at the gym.</string>
     <string name="nothing">_</string>
     <string name="the">the</string>
     <string name="a">a</string>
     <string name="instructions2">Answer the question by ticking the correct box(es)(several answers possible)</string>
+    <!--question 3-->
     <string name="question3">3. Choose the do\'s when preparing the Use of English  </string>
     <string name="source">Read the sources, titles and subtitles of the texts where given; they are there to help you</string>
     <string name="referring_text">try to answer any questions without referring carefully to the text.</string>
     <string name="overall_context">Check that the completed paragraph makes sense in the passage as a whole (Part 6). The missing
 sentence must fit the overall context.</string>
     <string name="check_spelling">Make sure that you transfer your answers to the answer sheet accurately.</string>
+    <!-- question 4-->
     <string name="question4_part1">4. Complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between two and five words, including the word given.</string>
     <string name="question4_part2">So that Susan would be fit for the skiing, she went to the gym three times a week.</string>
     <string name="question4_part3">order</string>
