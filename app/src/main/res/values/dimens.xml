@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="padding">10dp</dimen>
+    <dimen name="default_padding">10dp</dimen>
+    <dimen name="main_text_padding">20dp</dimen>
+    <dimen name="margin_subtitle">150dp</dimen>
+    <dimen name="view_height">2dp</dimen>
+    <dimen name="title_sizeH1">27sp</dimen>
+    <dimen name="title_sizeH2">20sp</dimen>
 </resources>

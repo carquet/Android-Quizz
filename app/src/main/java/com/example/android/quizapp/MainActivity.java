@@ -43,9 +43,9 @@ public class MainActivity extends AppCompatActivity {
         checkRadioQuestions(q2);
         checkQuestion3(q3Answer1, q3Answer3, q3Answer4);
         checkQuestion4(q4Answer);
-
+        String toastMessage = getString(R.string.toast_message, answeredCorrectly);
         Toast.makeText(MainActivity.this,
-                "you answered " + answeredCorrectly + " questions correctly out of 4", Toast.LENGTH_SHORT).show();
+                toastMessage, Toast.LENGTH_SHORT).show();
         answeredCorrectly = 0;
     }
 
@@ -62,9 +62,9 @@ public class MainActivity extends AppCompatActivity {
 
     /** this method only check question 3 answers and add the count of good answer
      *
-     * @param answer1
-     * @param answer2
-     * @param answer3
+     * @param answer1 is the correct answer
+     * @param answer2 is the correct answer
+     * @param answer3 is the correct answer
      */
     void checkQuestion3(CheckBox answer1, CheckBox answer2, CheckBox answer3){
         if (answer1.isChecked() && answer2.isChecked() && answer3.isChecked()){
