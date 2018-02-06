@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
     /**
      * This method is called when the submit button is clicked.
      */
