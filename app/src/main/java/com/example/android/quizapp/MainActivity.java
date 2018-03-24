@@ -73,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void checkQuestion4(EditText answer){
+
         if(answer.getText().toString().contains("in order to be")) answeredCorrectly = answeredCorrectly + 1;
     }
 
