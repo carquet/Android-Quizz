@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         checkQuestion4(q4Answer);
         String toastMessage = getString(R.string.toast_message, answeredCorrectly);
         Toast.makeText(MainActivity.this,
-                toastMessage, Toast.LENGTH_SHORT).show();
+        toastMessage, Toast.LENGTH_SHORT).show();
         answeredCorrectly = 0;
     }
 
@@ -73,8 +73,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void checkQuestion4(EditText answer){
+        if(answer.getText().toString().toLowerCase().contains("in order to be")) answeredCorrectly = answeredCorrectly + 1;
 
-        if(answer.getText().toString().contains("in order to be")) answeredCorrectly = answeredCorrectly + 1;
     }
 
 
