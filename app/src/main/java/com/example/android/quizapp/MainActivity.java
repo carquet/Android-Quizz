@@ -72,12 +72,14 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+
+
     /** this method only check question 4 answers and add the count of good answer
      *
-     * @param answer take the user inout as a parameter.
+     * @param answer take the user input as a parameter.
      */
     void checkQuestion4(EditText answer){
-        if(answer.getText().toString().toLowerCase().contains("in order to be")) answeredCorrectly = answeredCorrectly + 1;
+        if(answer.getText().toString().toLowerCase().trim().contentEquals("in order to be")) answeredCorrectly = answeredCorrectly + 1;
 
     }
 
