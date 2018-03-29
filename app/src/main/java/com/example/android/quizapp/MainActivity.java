@@ -1,5 +1,7 @@
 package com.example.android.quizapp;
 
+
+import android.annotation.SuppressLint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -38,14 +40,15 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the submit button is clicked.
      */
 
-    void submitAnswer(View view){
+
+    public void submitAnswer(View view){
         checkRadioQuestions(q1);
         checkRadioQuestions(q2);
         checkQuestion3(q3Answer1, q3Answer3, q3Answer4);
         checkQuestion4(q4Answer);
-        String toastMessage = getString(R.string.toast_message, answeredCorrectly);
+        @SuppressLint({"StringFormatInvalid", "LocalSuppress"}) String toastMessage = getString(R.string.toast_message, answeredCorrectly);
         Toast.makeText(MainActivity.this,
-        toastMessage, Toast.LENGTH_SHORT).show();
+                toastMessage, Toast.LENGTH_SHORT).show();
         answeredCorrectly = 0;
     }
 

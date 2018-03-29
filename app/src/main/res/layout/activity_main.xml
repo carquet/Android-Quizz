@@ -56,16 +56,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:textSize="@dimen/title_sizeH2"
+                android:textSize="@dimen/title_sizeH1"
                 android:text="@string/use_of_english"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
+                android:textSize="@dimen/title_sizeH2"
                 android:text="@string/instructions1"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="@dimen/general_text_size"
                 android:paddingVertical="@dimen/default_padding"
                 android:text="@string/question1"/>
             <RadioGroup
@@ -79,18 +81,21 @@
                     android:id="@+id/radio_question1_answer1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textSize="@dimen/general_text_size"
                     android:paddingHorizontal="@dimen/default_padding"
                     android:text="@string/few"/>
                 <RadioButton
                     android:id="@+id/radio_question1_answer2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textSize="@dimen/general_text_size"
                     android:paddingHorizontal="@dimen/default_padding"
                     android:text="@string/little"/>
                 <RadioButton
                     android:id="@+id/radio_question1_answer3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textSize="@dimen/general_text_size"
                     android:paddingHorizontal="@dimen/default_padding"
                     android:text="@string/some"/>
             </RadioGroup>
@@ -102,6 +107,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="@dimen/general_text_size"
                 android:paddingVertical="@dimen/default_padding"
                 android:text="@string/question2"/>
 
@@ -116,18 +122,21 @@
                     android:id="@+id/radio_question2_answer1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textSize="@dimen/general_text_size"
                     android:paddingHorizontal="@dimen/default_padding"
                     android:text="@string/nothing"/>
                 <RadioButton
                     android:id="@+id/radio_question2_answer2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textSize="@dimen/general_text_size"
                     android:paddingHorizontal="@dimen/default_padding"
                     android:text="@string/the"/>
                 <RadioButton
                     android:id="@+id/radio_question2_answer3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textSize="@dimen/general_text_size"
                     android:paddingHorizontal="@dimen/default_padding"
                     android:text="@string/a"/>
             </RadioGroup>
@@ -145,6 +154,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="@dimen/general_text_size"
                 android:paddingVertical="@dimen/default_padding"
                 android:text="@string/question3"/>
 
@@ -152,24 +162,28 @@
                 android:id="@+id/checkbox_question3_answer1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="@dimen/general_text_size"
                 android:paddingVertical="@dimen/default_padding"
                 android:text="@string/source"/>
             <CheckBox
                 android:id="@+id/checkbox_question3_answer2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="@dimen/general_text_size"
                 android:paddingVertical="@dimen/default_padding"
                 android:text="@string/referring_text"/>
             <CheckBox
                 android:id="@+id/checkbox_question3_answer3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="@dimen/general_text_size"
                 android:paddingVertical="@dimen/default_padding"
                 android:text="@string/overall_context"/>
             <CheckBox
                 android:id="@+id/checkbox_question3_answer4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="@dimen/general_text_size"
                 android:paddingVertical="@dimen/default_padding"
                 android:text="@string/check_spelling"/>
 
@@ -189,6 +203,7 @@
                 android:id="@+id/question4_part2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="@dimen/general_text_size"
                 android:paddingVertical="@dimen/default_padding"
                 android:textStyle="italic"
                 android:text="@string/question4_part2"/>
@@ -197,6 +212,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAllCaps="true"
+                android:textSize="@dimen/general_text_size"
                 android:paddingVertical="@dimen/default_padding"
                 android:text="@string/question4_part3"/>
 
@@ -204,6 +220,7 @@
                 android:id="@+id/question4_part4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="@dimen/general_text_size"
                 android:paddingVertical="@dimen/default_padding"
                 android:text="@string/answer"/>
 
@@ -211,6 +228,7 @@
                 android:id="@+id/free_answer_question4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textSize="@dimen/general_text_size"
                 android:hint="@string/hint"
                 android:inputType="text"/>
         </LinearLayout>

@@ -4,6 +4,7 @@
     <dimen name="main_text_padding">20dp</dimen>
     <dimen name="margin_subtitle">150dp</dimen>
     <dimen name="view_height">2dp</dimen>
-    <dimen name="title_sizeH1">27sp</dimen>
-    <dimen name="title_sizeH2">20sp</dimen>
+    <dimen name="title_sizeH1">30sp</dimen>
+    <dimen name="title_sizeH2">22sp</dimen>
+    <dimen name="general_text_size">20sp</dimen>
 </resources>
