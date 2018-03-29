@@ -58,12 +58,13 @@
                 android:textStyle="bold"
                 android:textSize="@dimen/title_sizeH1"
                 android:text="@string/use_of_english"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
+                android:text="@string/instructions1"
                 android:textSize="@dimen/title_sizeH2"
-                android:text="@string/instructions1"/>
+                android:textStyle="bold" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -102,13 +103,14 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/view_height"
+                android:layout_margin="@dimen/default_padding"
                 android:background="@color/colorPrimaryDark"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/general_text_size"
-                android:paddingVertical="@dimen/default_padding"
+                android:paddingVertical="@dimen/default_margin"
                 android:text="@string/question2"/>
 
             <RadioGroup
@@ -144,11 +146,13 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/view_height"
+                android:layout_margin="@dimen/default_margin"
                 android:background="@color/colorPrimaryDark"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
+                android:textSize="@dimen/title_sizeH2"
                 android:text="@string/instructions2"/>
 
             <TextView
@@ -190,6 +194,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/view_height"
+                android:layout_margin="@dimen/default_margin"
                 android:background="@color/colorPrimaryDark"/>
 
             <TextView
@@ -197,7 +202,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingVertical="@dimen/default_padding"
-                android:textStyle="bold"
+                android:textSize="@dimen/general_text_size"
                 android:text="@string/question4_part1"/>
             <TextView
                 android:id="@+id/question4_part2"
