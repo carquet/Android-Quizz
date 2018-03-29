@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * This method is called when the submit button is clicked.
+     * This method is called when the submit button is clicked. It calls the methods that checks whether the correct button is checked or not and displays the total result.
      */
 
 
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         checkRadioQuestions(q2);
         checkQuestion3(q3Answer1, q3Answer3, q3Answer4);
         checkQuestion4(q4Answer);
-        @SuppressLint({"StringFormatInvalid", "LocalSuppress"}) String toastMessage = getString(R.string.toast_message, answeredCorrectly);
+        String toastMessage = getString(R.string.toast_message, answeredCorrectly);
         Toast.makeText(MainActivity.this,
                 toastMessage, Toast.LENGTH_SHORT).show();
         answeredCorrectly = 0;
@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method checks whether the correct radio button has been checked and add the count of good answers
      * @param question are the correct radio buttons checked.
+     *
      */
     void checkRadioQuestions(RadioButton question){
         if (question.isChecked()){
