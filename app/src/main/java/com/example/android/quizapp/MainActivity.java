@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     RadioButton q1;
     RadioButton q2;
     CheckBox q3Answer1;
+    CheckBox q3Answer2;
     CheckBox q3Answer3;
     CheckBox q3Answer4;
     EditText q4Answer;
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         q1 = findViewById(R.id.radio_question1_answer3);
         q2 = findViewById(R.id.radio_question2_answer2);
         q3Answer1 = findViewById(R.id.checkbox_question3_answer1);
+        q3Answer2 = findViewById(R.id.checkbox_question3_answer2);
         q3Answer3 = findViewById(R.id.checkbox_question3_answer3);
         q3Answer4 = findViewById(R.id.checkbox_question3_answer4);
         q4Answer = findViewById(R.id.free_answer_question4);
@@ -41,10 +43,10 @@ public class MainActivity extends AppCompatActivity {
      */
 
 
-    public void submitAnswer(View view){
+    public void submitAnswer(View view) {
         checkRadioQuestions(q1);
         checkRadioQuestions(q2);
-        checkQuestion3(q3Answer1, q3Answer3, q3Answer4);
+        checkQuestion3(q3Answer1, q3Answer2, q3Answer3, q3Answer4);
         checkQuestion4(q4Answer);
         String toastMessage = getString(R.string.toast_message, answeredCorrectly);
         Toast.makeText(MainActivity.this,
@@ -54,36 +56,43 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * This method checks whether the correct radio button has been checked and add the count of good answers
-     * @param question are the correct radio buttons checked.
      *
+     * @param question are the correct radio buttons checked.
      */
-    void checkRadioQuestions(RadioButton question){
-        if (question.isChecked()){
+    void checkRadioQuestions(RadioButton question) {
+        if (question.isChecked()) {
             answeredCorrectly = answeredCorrectly + 1;
         }
 
     }
 
-    /** this method only check question 3 answers and add the count of good answer
+    /**
+     * this method only check question 3 answers and add the count of good answer
      *
      * @param answer1 is the correct answer
      * @param answer2 is the correct answer
      * @param answer3 is the correct answer
      */
-    void checkQuestion3(CheckBox answer1, CheckBox answer2, CheckBox answer3){
-        if (answer1.isChecked() && answer2.isChecked() && answer3.isChecked()){
+    void checkQuestion3(CheckBox answer1, CheckBox answer2, CheckBox answer3, CheckBox answer4) {
+        Boolean correct_answer = answer1.isChecked() && answer3.isChecked() && answer4.isChecked();
+        Boolean wrong_answer = answer2.isChecked();
+        if (correct_answer && !wrong_answer) {
             answeredCorrectly = answeredCorrectly + 1;
+        } else {
+            answeredCorrectly = answeredCorrectly + 0;
         }
+
     }
 
 
-
-    /** this method only check question 4 answers and add the count of good answer
+    /**
+     * this method only check question 4 answers and add the count of good answer
      *
      * @param answer take the user input as a parameter.
      */
-    void checkQuestion4(EditText answer){
-        if(answer.getText().toString().toLowerCase().trim().contentEquals("in order to be")) answeredCorrectly = answeredCorrectly + 1;
+    void checkQuestion4(EditText answer) {
+        if (answer.getText().toString().toLowerCase().trim().contentEquals("in order to be"))
+            answeredCorrectly = answeredCorrectly + 1;
 
     }
 

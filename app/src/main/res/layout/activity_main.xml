@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.quizapp.MainActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -13,51 +13,56 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
                 android:src="@drawable/uk"
                 tools:ignore="ContentDescription" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-condensed"
-                android:textColor="@color/colorPrimaryDark"
                 android:layout_marginTop="@dimen/margin_subtitle"
+                android:fontFamily="sans-serif-condensed"
                 android:paddingEnd="@dimen/default_padding"
                 android:paddingLeft="@dimen/default_padding"
                 android:paddingRight="@dimen/default_padding"
+                android:text="@string/sub_title"
                 android:textAllCaps="true"
-                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
                 android:textSize="@dimen/title_sizeH2"
-                android:text="@string/sub_title" />
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:fontFamily="sans-serif-condensed"
-                android:textColor="@color/colorPrimaryDark"
                 android:layout_marginTop="50dp"
+                android:fontFamily="sans-serif-condensed"
                 android:paddingEnd="@dimen/default_padding"
                 android:paddingLeft="@dimen/default_padding"
                 android:paddingRight="@dimen/default_padding"
+                android:text="@string/title"
                 android:textAllCaps="true"
-                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
                 android:textSize="@dimen/title_sizeH1"
-                android:text="@string/title" />
+                android:textStyle="bold" />
         </RelativeLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="@dimen/main_text_padding"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="@dimen/main_text_padding">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
+                android:text="@string/use_of_english"
                 android:textSize="@dimen/title_sizeH1"
-                android:text="@string/use_of_english"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -65,177 +70,190 @@
                 android:text="@string/instructions1"
                 android:textSize="@dimen/title_sizeH2"
                 android:textStyle="bold" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/general_text_size"
                 android:paddingVertical="@dimen/default_padding"
-                android:text="@string/question1"/>
+                android:text="@string/question1"
+                android:textSize="@dimen/general_text_size" />
+
             <RadioGroup
                 android:id="@+id/radio_question1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/default_padding"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:padding="@dimen/default_padding">
 
                 <RadioButton
                     android:id="@+id/radio_question1_answer1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="@dimen/general_text_size"
                     android:paddingHorizontal="@dimen/default_padding"
-                    android:text="@string/few"/>
+                    android:text="@string/few"
+                    android:textSize="@dimen/general_text_size" />
+
                 <RadioButton
                     android:id="@+id/radio_question1_answer2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="@dimen/general_text_size"
                     android:paddingHorizontal="@dimen/default_padding"
-                    android:text="@string/little"/>
+                    android:text="@string/little"
+                    android:textSize="@dimen/general_text_size" />
+
                 <RadioButton
                     android:id="@+id/radio_question1_answer3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="@dimen/general_text_size"
                     android:paddingHorizontal="@dimen/default_padding"
-                    android:text="@string/some"/>
+                    android:text="@string/some"
+                    android:textSize="@dimen/general_text_size" />
             </RadioGroup>
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/view_height"
                 android:layout_margin="@dimen/default_padding"
-                android:background="@color/colorPrimaryDark"/>
+                android:background="@color/colorPrimaryDark" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/general_text_size"
                 android:paddingVertical="@dimen/default_margin"
-                android:text="@string/question2"/>
+                android:text="@string/question2"
+                android:textSize="@dimen/general_text_size" />
 
             <RadioGroup
                 android:id="@+id/radio_question2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/default_padding"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:padding="@dimen/default_padding">
 
                 <RadioButton
                     android:id="@+id/radio_question2_answer1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="@dimen/general_text_size"
                     android:paddingHorizontal="@dimen/default_padding"
-                    android:text="@string/nothing"/>
+                    android:text="@string/nothing"
+                    android:textSize="@dimen/general_text_size" />
+
                 <RadioButton
                     android:id="@+id/radio_question2_answer2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="@dimen/general_text_size"
                     android:paddingHorizontal="@dimen/default_padding"
-                    android:text="@string/the"/>
+                    android:text="@string/the"
+                    android:textSize="@dimen/general_text_size" />
+
                 <RadioButton
                     android:id="@+id/radio_question2_answer3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="@dimen/general_text_size"
                     android:paddingHorizontal="@dimen/default_padding"
-                    android:text="@string/a"/>
+                    android:text="@string/a"
+                    android:textSize="@dimen/general_text_size" />
             </RadioGroup>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/view_height"
                 android:layout_margin="@dimen/default_margin"
-                android:background="@color/colorPrimaryDark"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:textSize="@dimen/title_sizeH2"
-                android:text="@string/instructions2"/>
+                android:background="@color/colorPrimaryDark" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/general_text_size"
+                android:text="@string/instructions2"
+                android:textSize="@dimen/title_sizeH2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:paddingVertical="@dimen/default_padding"
-                android:text="@string/question3"/>
+                android:text="@string/question3"
+                android:textSize="@dimen/general_text_size" />
 
             <CheckBox
                 android:id="@+id/checkbox_question3_answer1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/general_text_size"
                 android:paddingVertical="@dimen/default_padding"
-                android:text="@string/source"/>
+                android:text="@string/source"
+                android:textSize="@dimen/general_text_size" />
+
             <CheckBox
                 android:id="@+id/checkbox_question3_answer2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/general_text_size"
                 android:paddingVertical="@dimen/default_padding"
-                android:text="@string/referring_text"/>
+                android:text="@string/referring_text"
+                android:textSize="@dimen/general_text_size" />
+
             <CheckBox
                 android:id="@+id/checkbox_question3_answer3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/general_text_size"
                 android:paddingVertical="@dimen/default_padding"
-                android:text="@string/overall_context"/>
+                android:text="@string/overall_context"
+                android:textSize="@dimen/general_text_size" />
+
             <CheckBox
                 android:id="@+id/checkbox_question3_answer4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/general_text_size"
                 android:paddingVertical="@dimen/default_padding"
-                android:text="@string/check_spelling"/>
+                android:text="@string/check_spelling"
+                android:textSize="@dimen/general_text_size" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/view_height"
                 android:layout_margin="@dimen/default_margin"
-                android:background="@color/colorPrimaryDark"/>
+                android:background="@color/colorPrimaryDark" />
 
             <TextView
                 android:id="@+id/question4_part1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingVertical="@dimen/default_padding"
-                android:textSize="@dimen/general_text_size"
-                android:text="@string/question4_part1"/>
+                android:text="@string/question4_part1"
+                android:textSize="@dimen/general_text_size" />
+
             <TextView
                 android:id="@+id/question4_part2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/general_text_size"
                 android:paddingVertical="@dimen/default_padding"
-                android:textStyle="italic"
-                android:text="@string/question4_part2"/>
+                android:text="@string/question4_part2"
+                android:textSize="@dimen/general_text_size"
+                android:textStyle="italic" />
+
             <TextView
                 android:id="@+id/question4_part3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAllCaps="true"
-                android:textSize="@dimen/general_text_size"
                 android:paddingVertical="@dimen/default_padding"
-                android:text="@string/question4_part3"/>
+                android:text="@string/question4_part3"
+                android:textAllCaps="true"
+                android:textSize="@dimen/general_text_size" />
 
             <TextView
                 android:id="@+id/question4_part4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/general_text_size"
                 android:paddingVertical="@dimen/default_padding"
-                android:text="@string/answer"/>
+                android:text="@string/answer"
+                android:textSize="@dimen/general_text_size" />
 
             <EditText
                 android:id="@+id/free_answer_question4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/general_text_size"
                 android:hint="@string/hint"
-                android:inputType="text"/>
+                android:inputType="text"
+                android:textSize="@dimen/general_text_size" />
         </LinearLayout>
 
 
@@ -246,8 +264,8 @@
             android:layout_gravity="center"
             android:layout_margin="@dimen/main_text_padding"
             android:background="@color/colorPrimary"
-            android:text="@string/submit"
-            android:onClick="submitAnswer" />
+            android:onClick="submitAnswer"
+            android:text="@string/submit" />
 
     </LinearLayout>
 
