@@ -39,8 +39,6 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method is called when the submit button is clicked. It calls the methods that checks whether the correct button is checked or not and displays the total result.
      */
-
-
     public void submitAnswer(View view) {
         checkRadioQuestions(q1);
         checkRadioQuestions(q2);
