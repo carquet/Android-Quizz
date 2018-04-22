@@ -34,12 +34,17 @@ public class MainActivity extends AppCompatActivity {
         q3Answer4 = findViewById(R.id.checkbox_question3_answer4);
         q4Answer = findViewById(R.id.free_answer_question4);
 
-    }
-    public void openReading(View view){
-        Intent intentReading = new Intent(this, ReadingActivity.class);
-        startActivity(intentReading);
+        TextView buttonReading = (TextView) findViewById(R.id.reading_button);
+        buttonReading.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentReading = new Intent(MainActivity.this, ReadingActivity.class);
+                startActivity(intentReading);
+            }
+        });
 
     }
+
 
     /**
      * This method is called when the submit button is clicked. It calls the methods that checks whether the correct button is checked or not and displays the total result.
