@@ -1,16 +1,17 @@
 package com.example.android.quizapp;
 
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    RadioButton q1;
     RadioButton q2;
     CheckBox q3Answer1;
     CheckBox q3Answer2;
@@ -26,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         answeredCorrectly = 0;
         instructions = "";
-        q1 = findViewById(R.id.radio_question1_answer3);
         q2 = findViewById(R.id.radio_question2_answer2);
         q3Answer1 = findViewById(R.id.checkbox_question3_answer1);
         q3Answer2 = findViewById(R.id.checkbox_question3_answer2);
@@ -35,16 +35,20 @@ public class MainActivity extends AppCompatActivity {
         q4Answer = findViewById(R.id.free_answer_question4);
 
     }
+    public void openReading(View view){
+        Intent intentReading = new Intent(this, ReadingActivity.class);
+        startActivity(intentReading);
+
+    }
 
     /**
      * This method is called when the submit button is clicked. It calls the methods that checks whether the correct button is checked or not and displays the total result.
      */
     public void submitAnswer(View view) {
-        checkRadioQuestions(q1);
         checkRadioQuestions(q2);
         checkQuestion3(q3Answer1, q3Answer2, q3Answer3, q3Answer4);
         checkQuestion4(q4Answer);
-        String toastMessage = getString(R.string.toast_message);
+        String toastMessage = getString(R.string.toast_message, answeredCorrectly);
         Toast.makeText(MainActivity.this,
                 toastMessage, Toast.LENGTH_SHORT).show();
         answeredCorrectly = 0;
