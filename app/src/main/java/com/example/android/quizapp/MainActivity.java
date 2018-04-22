@@ -1,16 +1,17 @@
 package com.example.android.quizapp;
 
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    RadioButton q1;
     RadioButton q2;
     CheckBox q3Answer1;
     CheckBox q3Answer2;
@@ -26,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         answeredCorrectly = 0;
         instructions = "";
-        q1 = findViewById(R.id.radio_question1_answer3);
         q2 = findViewById(R.id.radio_question2_answer2);
         q3Answer1 = findViewById(R.id.checkbox_question3_answer1);
         q3Answer2 = findViewById(R.id.checkbox_question3_answer2);
@@ -34,13 +34,22 @@ public class MainActivity extends AppCompatActivity {
         q3Answer4 = findViewById(R.id.checkbox_question3_answer4);
         q4Answer = findViewById(R.id.free_answer_question4);
 
+        TextView buttonReading = (TextView) findViewById(R.id.reading_button);
+        buttonReading.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentReading = new Intent(MainActivity.this, ReadingActivity.class);
+                startActivity(intentReading);
+            }
+        });
+
     }
+
 
     /**
      * This method is called when the submit button is clicked. It calls the methods that checks whether the correct button is checked or not and displays the total result.
      */
     public void submitAnswer(View view) {
-        checkRadioQuestions(q1);
         checkRadioQuestions(q2);
         checkQuestion3(q3Answer1, q3Answer2, q3Answer3, q3Answer4);
         checkQuestion4(q4Answer);
@@ -73,8 +82,6 @@ public class MainActivity extends AppCompatActivity {
         Boolean wrong_answer = answer2.isChecked();
         if (correct_answer && !wrong_answer) {
             answeredCorrectly = answeredCorrectly + 1;
-        } else {
-            answeredCorrectly = answeredCorrectly + 0;
         }
 
     }
@@ -86,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
      */
     void checkQuestion4(EditText answer) {
         if (answer.getText().toString().toLowerCase().trim().contentEquals("in order to be")) {
-            answeredCorrectly = answeredCorrectly + 1;
+            answeredCorrectly++;
         }
 
     }

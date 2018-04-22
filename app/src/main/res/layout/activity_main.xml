@@ -10,6 +10,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -20,6 +21,7 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/uk"
                 tools:ignore="ContentDescription" />
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -58,63 +60,11 @@
             android:padding="@dimen/main_text_padding">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/use_of_english"
-                android:textSize="@dimen/title_sizeH1"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/instructions1"
-                android:textSize="@dimen/title_sizeH2"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingVertical="@dimen/default_padding"
-                android:text="@string/question1"
-                android:textSize="@dimen/general_text_size" />
-
-            <RadioGroup
-                android:id="@+id/radio_question1"
+                android:id="@+id/reading_button"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="@dimen/default_padding">
-
-                <RadioButton
-                    android:id="@+id/radio_question1_answer1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingHorizontal="@dimen/default_padding"
-                    android:text="@string/few"
-                    android:textSize="@dimen/general_text_size" />
-
-                <RadioButton
-                    android:id="@+id/radio_question1_answer2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingHorizontal="@dimen/default_padding"
-                    android:text="@string/little"
-                    android:textSize="@dimen/general_text_size" />
-
-                <RadioButton
-                    android:id="@+id/radio_question1_answer3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingHorizontal="@dimen/default_padding"
-                    android:text="@string/some"
-                    android:textSize="@dimen/general_text_size" />
-            </RadioGroup>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/view_height"
-                android:layout_margin="@dimen/default_padding"
-                android:background="@color/colorPrimaryDark" />
+                android:layout_height="57dp"
+                android:text="@string/reading"
+                android:onClick="openReading"/>
 
             <TextView
                 android:layout_width="wrap_content"
