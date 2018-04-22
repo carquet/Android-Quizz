@@ -63,8 +63,12 @@
                 android:id="@+id/reading_button"
                 android:layout_width="match_parent"
                 android:layout_height="57dp"
-                android:text="@string/reading"
-                android:onClick="openReading"/>
+                android:text="@string/reading" />
+            <TextView
+                android:id="@+id/listening_button"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:text="@string/listening" />
 
             <TextView
                 android:layout_width="wrap_content"

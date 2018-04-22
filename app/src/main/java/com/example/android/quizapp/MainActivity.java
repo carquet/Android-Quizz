@@ -1,6 +1,7 @@
 package com.example.android.quizapp;
 
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -40,6 +41,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intentReading = new Intent(MainActivity.this, ReadingActivity.class);
                 startActivity(intentReading);
+            }
+        });
+
+        TextView buttonListening = (TextView) findViewById(R.id.listening_button);
+        buttonListening.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentListening = new Intent(MainActivity.this, ListeningActivity.class);
+                startActivity(intentListening);
             }
         });
 
