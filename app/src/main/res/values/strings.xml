@@ -32,5 +32,5 @@ sentence must fit the overall context.</string>
     <string name="hint">type your answer here</string>
     <string name="submit">submit</string>
     <!-- final score given to the user -->
-    <string name="toast_message">your score is : <xliff:g id="answeredCorrectly" example="0">%d</xliff:g> out of 4 !</string>
+    <string name="toast_message">your score is : <xliff:g example="0" id="answeredCorrectly">%d</xliff:g> out of 4 !</string>
 </resources>
