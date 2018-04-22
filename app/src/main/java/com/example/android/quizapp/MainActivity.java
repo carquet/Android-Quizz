@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         checkRadioQuestions(q2);
         checkQuestion3(q3Answer1, q3Answer2, q3Answer3, q3Answer4);
         checkQuestion4(q4Answer);
-        String toastMessage = getString(R.string.toast_message, answeredCorrectly);
+        String toastMessage = getString(R.string.toast_message);
         Toast.makeText(MainActivity.this,
                 toastMessage, Toast.LENGTH_SHORT).show();
         answeredCorrectly = 0;
@@ -73,8 +73,6 @@ public class MainActivity extends AppCompatActivity {
         Boolean wrong_answer = answer2.isChecked();
         if (correct_answer && !wrong_answer) {
             answeredCorrectly = answeredCorrectly + 1;
-        } else {
-            answeredCorrectly = answeredCorrectly + 0;
         }
 
     }
@@ -86,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
      */
     void checkQuestion4(EditText answer) {
         if (answer.getText().toString().toLowerCase().trim().contentEquals("in order to be")) {
-            answeredCorrectly = answeredCorrectly + 1;
+            answeredCorrectly++;
         }
 
     }
